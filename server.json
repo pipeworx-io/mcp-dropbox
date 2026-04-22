@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/dropbox",
-  "title": "dropuox",
-  "description": "Dropbox MCP Pack — wraps the Dropbox API v2",
+  "title": "Dropbox",
+  "description": "Dropbox MCP Pack \u2014 wraps the Dropbox API v2",
   "version": "0.1.0",
   "websiteUrl": "https://pipeworx.io/packs/dropbox",
   "repository": {
