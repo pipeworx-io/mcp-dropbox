@@ -2,13 +2,13 @@
 
 Dropbox MCP Pack — wraps the Dropbox API v2
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `dropbox_list_folder` | List files and folders in a Dropbox directory. Returns names, types, sizes, and modification dates. Use when browsing folder contents or checking what\'s stored at a path. |
+| `dropbox_list_folder` | List files and folders in a Dropbox directory. Returns names, types, sizes, and modification dates. Use when browsing folder contents or checking what's stored at a path. |
 | `dropbox_search` | Search Dropbox for files and folders by name or content. Returns matching paths, file types, and metadata. Use when you need to find a file without knowing its exact location. |
 | `dropbox_get_metadata` | Get detailed metadata for a file or folder: size, modified date, ID, sharing status, and revision info. Use before downloading or modifying to inspect properties. |
 | `dropbox_download` | Download a file from Dropbox and return its content as text plus metadata (size, type, modified date). Use to retrieve file contents for processing or inspection. |
@@ -28,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
