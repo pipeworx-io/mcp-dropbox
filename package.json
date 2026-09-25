@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-dropbox",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Dropbox MCP Pack — wraps the Dropbox API v2",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-831b6a588d512e70a038a2b2c3e124ab45f5ec2f1caf46e5dcd7a2e801123265",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-bb82de6af415c193ec38f6c29d1dd0f038b960cb70652d26e39c5f756576f3db",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
