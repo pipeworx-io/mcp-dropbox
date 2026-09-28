@@ -744,7 +744,10 @@ const tools: McpToolExport['tools'] = [
     inputSchema: {
       type: 'object' as const,
       properties: {
-        path: { type: 'string', description: 'Folder path (e.g., "" for root, "/Documents")' },
+        // `minLength: 0` is the gateway's opt-in for a REQUIRED arg where the
+        // empty string is a real value — Dropbox's own API takes "" to mean the
+        // account root, so the preflight must not reject it (fleet #2480).
+        path: { type: 'string', minLength: 0, description: 'Folder path — "" for the account root, otherwise e.g. "/Documents"' },
         limit: { type: 'number', description: 'Max entries to return (default 100)' },
       },
       required: ['path'],
