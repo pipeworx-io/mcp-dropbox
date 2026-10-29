@@ -1,0 +1,95 @@
+[
+  {
+    "name": "dropbox_list_folder",
+    "description": "List files and folders in a Dropbox directory. Returns names, types, sizes, and modification dates. Use when browsing folder contents or checking what's stored at a path.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 0,
+          "description": "Folder path — \"\" for the account root, otherwise e.g. \"/Documents\""
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max entries to return (default 100)"
+        }
+      },
+      "required": [
+        "path"
+      ]
+    }
+  },
+  {
+    "name": "dropbox_search",
+    "description": "Search Dropbox for files and folders by name or content. Returns matching paths, file types, and metadata. Use when you need to find a file without knowing its exact location.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query string"
+        },
+        "max_results": {
+          "type": "number",
+          "description": "Maximum results to return (default 20)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "dropbox_get_metadata",
+    "description": "Get detailed metadata for a file or folder: size, modified date, ID, sharing status, and revision info. Use before downloading or modifying to inspect properties.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "File or folder path"
+        }
+      },
+      "required": [
+        "path"
+      ]
+    }
+  },
+  {
+    "name": "dropbox_download",
+    "description": "Download a file from Dropbox and return its content as text plus metadata (size, type, modified date). Use to retrieve file contents for processing or inspection.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "File path to download"
+        }
+      },
+      "required": [
+        "path"
+      ]
+    }
+  },
+  {
+    "name": "dropbox_create_folder",
+    "description": "Create a new folder in Dropbox at a specified path. Returns folder metadata. Use to organize files or set up directory structures.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Path of the folder to create (e.g., \"/New Folder\")"
+        },
+        "autorename": {
+          "type": "boolean",
+          "description": "Auto-rename if a folder with the same name exists (default false)"
+        }
+      },
+      "required": [
+        "path"
+      ]
+    }
+  }
+]

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-dropbox",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Dropbox MCP Pack — wraps the Dropbox API v2",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-dropbox": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "dropbox"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-dropbox.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/dropbox",
   "pipeworx": {
-    "sourceHash": "v1-d918fe3208f3e9829136490a3276a10f6968b1b4b9dcfeefeca75aa3ba3009b6",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "dropbox",
+    "gatewaySlug": "dropbox",
+    "sourceHash": "v1-fae27c4bed6c840000529bc4c4c088dcb9641430d22a5fe384d6eb9ba9f96c5a",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
