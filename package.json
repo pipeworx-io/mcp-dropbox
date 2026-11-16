@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-dropbox",
-  "version": "0.2.1",
-  "description": "Dropbox MCP Pack — wraps the Dropbox API v2",
+  "version": "0.2.2",
+  "description": "Unofficial Dropbox MCP Pack — wraps the Dropbox API v2",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "dropbox",
     "gatewaySlug": "dropbox",
-    "sourceHash": "v1-b8a965a1546911d75b60665047ac89f5967d81136a8bf3b4fc85f76268c030c4",
-    "sourceCommit": "e707a4bb6209f432984c0a83bf64b3138130db89"
+    "sourceHash": "v1-5d33aef8399294493afd40252a49f8fc764abc06c92d089235408e7d6a09f87c",
+    "sourceCommit": "874331b0c46b151f9264bd14840631427a7721c1"
   }
 }
